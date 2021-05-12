@@ -7,7 +7,16 @@
 
 package main
 
+import "fmt"
+
 func main() {
+	fmt.Println(22222)
+	<- GetCh()
+	fmt.Println(3333)
+}
+
+func GetCh() chan int {
+	return nil
 }
 
 func TestNewNonEscape() {
